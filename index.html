@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Puzzles</title>
+    <meta name="description" content="Sitio web de un juego de rompecabezas">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="puzzle.png"/>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="codigo.js"></script>
+</head>
+
+<body>
+	<header>
+		<img src="puzzle.png" width="120" height="120" alt="Logo de puzzles">
+		<div>
+			<h1>Puzzlemania</h1>
+			<p>Donde podr&aacute;s crear tus propios puzzles</p>
+		</div>
+	</header>
+
+    <section>
+        <article>
+            <h2>Imagen</h2>
+            <canvas id="cv01"></canvas>
+            <p id="sms"></p>
+            <footer>
+                <input type="file" name="nfile" onchange="preview(this);" onclick="document.getElementById(`cv01`).style.border=`2px solid #00AA00FF`;" id="foto" accept="image/*">
+                <!-- <button onclick="copiarCanvas();">Copiar</button> -->
+                <!-- <button onclick="dibujarTexto();">Texto</button> -->
+            </footer>
+        </article>
+
+        <article>
+            <h2>Puzzle</h2>
+
+            <div>
+                <canvas  id="cv02"> </canvas>
+                <br>
+                <div id="smsMarcador">
+                </div>
+                <h3>Color l&iacute;neas:</h3>
+                <input type="color" id="color-lineas" onchange="saberDificultad();" onclick="saberDificultad();" disabled>
+                <br>
+                <h3>Elija la dificultad:</h3>
+                <span>
+                    <select id="dificultad" onclick="saberDificultad();" disabled>
+                        <option value="F&aacute;cil">F&aacute;cil</option>
+                        <option value="Medio">Medio</option>
+                        <option value="Dif&iacute;cil">Dif&iacute;cil</option>
+                    </select>
+                </span>
+                <br>
+                <input type="button" disabled="disabled" value="Jugar" id="jugar" onclick="jugar();">
+                <input type="button" disabled value="Terminar de jugar" id="fin" onclick="terminarJuego();">
+                <input type="button" disabled value="Ayuda" id="ayuda" onclick="ayuda();">
+                <br>
+            </div>
+        </article>
+        <div id="ventanaFinJuegoSinTerminar"></div>
+        <div id="ventanaFinJuegoGanado"></div>
+        <script>
+            prepararCanvas();
+        </script>
+    </section>
+    <!-- <footer>
+        <div><span>Posici&oacute;n (x,y):</span><output id="posXY"></output></div>
+    </footer> -->
+    <footer>
+        <p>
+            &copy; <strong>PCW</strong> <time datetime="2018-05">mayo 2018</time> <br> <a href="acerca.html">by Araceli</a> <br>
+        </p>
+        <a class="" href="#">Inicio</a>
+    </footer>
+</body>
+</html>

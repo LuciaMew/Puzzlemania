@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Acerca &#8211; Puzzles</title>
+    <meta name="description" content="Sitio web sobre recetas de cocina, responsive hecho con html y css">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="puzzle.png"/>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="codigo.js"></script>
+</head>
+<body>
+
+    <header>
+        <a href="index.html"><img src="puzzle.png" width="120" height="120" alt="Logo de puzzles"></a>
+        <div>
+            <h1>Piensa un nombre guay</h1>
+            <p>Donde podr&aacute;s crear tus propios puzzles</p>
+        </div>
+    </header>
+
+    <section class="acerca">
+        <h2>&iquest;Qui&eacute;res conocernos?</h2>
+        <p>Esto es un trabajo para la entrega de la pr&aacute;ctica 3 de Programaci&oacute;n del Cliente Web, 2&#176; curso del grado de Ingenier&iacute;a Multimedia de la <a href="https://www.ua.es/">Universidad de Alicante</a>.<br>Ha sido realizada por:</p>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Apellidos</th>
+                <th>DNI</th>
+                <th>Correo electr&oacute;nico</th>
+            </tr>
+            <tr>
+                <td>Araceli Luc&iacute;a</td>
+                <td>Rebollo Dom&iacute;nguez</td>
+                <td>48771144</td>
+                <td><a href="mailto:ararebdom@gmail.com">ararebdom@<wbr>gmail.com</a></td>
+            </tr>
+            <tr>
+                <td colspan="1"><b>Grupo Pr&aacute;cticas:</b></td>
+                <td colspan="3">Grupo 2. Mi&eacute;rcoles de 17h a 19h</td>
+            </tr>
+        </table>
+
+        <h2>Documentaci&oacute;n de la pr&aacute;ctica 3</h2>
+        <h3>&iquest;Qué partes de la pr&aacute;ctica se han podido implementar? &iquest;Cu&aacute;les no?</h3>
+        <p>Todas las partes descritas en el enunciado de la pr&aacute;ctica han sido realizadas. Adem&aacute;s de las partes que se solicitaban en el enunciado, hemos elaborado ciertas partes como pueden ser entre otras:</p>
+        <ul>
+            <li>Cuando introduces una en el canvas algún objeto que no es una im&aacute;n, ya sea arrastr&aacute;ndolo o seleeeciion&aacute;ndolo, te lo indica con un mensaje que aparece bajo del canvas.</li>
+            <li>Si al cargar la im&aacute;gen en el canvas hay alg&uacute;n error, tambi&eacute;n se le indicar&aacute; al usuario con un mensaje como el anterior.</li>
+            <li>Tambi&eacute;n pusimos que no se pudiese seleccionar color de la rejilla ni dificultad hasta que nos se seleccionase una im&aacute;gen.</li>
+        </ul>
+        <h3>Posibles Incompatibilidades y Problemas con HTML, CSS y JavaScript</h3>
+        <p>Hemos tenido dificultades con los siguientes temas:</p>
+        <ol>
+            <li>Implementaci&oacute;n de un c&oacute;digo CSS que funcionase correctamente en todos los navegadores. Como todos los navegadores no utilizan el mismo tama&ntilde;o de fuente, fue dif&iacute;cil hacer que en todos se viese la p&aacute;gina igual.</li>
+            <li>Centrar correctamente los distintos apartados de la página web utilizando CSS. En ciertos caso nos supuso bastantes problemas porque atributos que hab&iacute;amos utilizado para hacerlo con ciertos elementos, con otros no funcionaba igual.</li>
+            <li>Al pasar el validador <a href="https://validator.w3.org/">validator.w3.org</a> por la p&aacute;gina de <a href="index.html">index</a>, este nos informa de un <i>warning</i> del atributo &quot;color&quot;, pero hemos encontrado informaci&oacute;n en <a href="https://www.w3schools.com/Html/html_form_input_types.asp">w3schools.com</a> en el apartado <b>Input type: color</b>, en los ejemplos, muestra que funciona en todos los principales navegadores menos en Internet Explorer 11 y sus versiones anteriores, y tampoco en Safari 9.1 y sus versiones anteriores.</li>
+            <li>Adem&aacute; el validador <a href="https://validator.w3.org/">validator.w3.org</a> tambi&eacute;n nos informa de otro <i>warning</i> en la p&aacute;gina <a href="index.html">index</a> dici&eacute;ndonos que podr&iacute;amos considerar utilizar un <i>h2-h6</i> dentro del <i>section</i>, pero nosotas hemos preferido no poner nada, puesto que dentro del <i>section</i> hay 2 <i>articles</i> con un t&iacute;tulo cada uno para cada canvas.</li>
+            <li>Por curiosidad, pasamos por un validador de CSS <a href="https://jigsaw.w3.org/css-validator/">jigsaw.w3.org</a> la <b>p&aacute;gina de estilo</b> y nos dimos cuenta de que todos los errores eran referentes a colores, o sobre <ins>background-color</ins> o sobre <ins>color</ins>.</li>
+            <li>Por &uacute;ltimo, hemos tenido problemas con los navegadores, puesto que por temas de seguridad, en algunos, ciertas funciones no funcionan, si no usas XAMPP y ves la pr&aacute;ctica desde la carpeta <i>htdocs>pcw</i> de la m&aacute;quina virtual que utilizamos en la asignatura.</li>
+        </ol>
+    </section>
+
+     <footer>
+        <p>
+            &copy; <strong>PCW</strong> <time datetime="2018-05">mayo 2018</time> <br> <a href="acerca.html">by Araceli</a> <br>
+        </p>
+        <a class="" href="#">Subir</a>
+        <a href="index.html">Ir a la p&aacute;gina principal</a>
+    </footer>
+
+</body>
+</html>
